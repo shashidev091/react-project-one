@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 
 function EsSix({ message }) {
+
     const [users, setUsers] = useState([
         { name: "Shashi", message: "Ya hoo" },
         { name: "Bhushan", message: "ta daa" },
         { name: "Bhagat", message: "Rum pum" }
-    ])
+    ]);
 
     const [count, setCount] = useState(0);
 
     const changeValue = () => {
-        console.log(users)
         setCount(count +1);
     }
 
@@ -21,9 +21,13 @@ function EsSix({ message }) {
                     <div className="person">
                         <h1>{user.name}</h1>
                         <p>{user.message}</p>
+                        <p>
+                            {count}
+                        </p>
                     </div>
                 </div>
             ))}
+            <button onClick={changeValue}>hello</button>
         </div>
     );
 }
