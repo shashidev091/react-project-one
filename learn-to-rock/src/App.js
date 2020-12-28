@@ -28,7 +28,7 @@ function App() {
         <Hello  name="Divyanshu" age="25"/>
         <Hello  name="Raja" age="27"/>
       </div>
-      <EsSix message="This is new es6 feature to replace props."/>
+      <EsSix/>
     </div>
   );
 }
