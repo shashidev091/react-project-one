@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 function EsSix({ message }) {
 
-    const [users, setUsers] = useState([
+    const [users] = useState([
         { name: "Shashi", message: "Ya hoo" },
         { name: "Bhushan", message: "ta daa" },
         { name: "Bhagat", message: "Rum pum" }

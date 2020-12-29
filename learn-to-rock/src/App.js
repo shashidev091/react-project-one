@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Hello from './sayHello';
 import EsSix from './EsSixFile';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
         <Hello  name="Raja" age="27"/>
       </div>
       <EsSix/>
+      <Footer>This is a footer</Footer>
     </div>
   );
 }
