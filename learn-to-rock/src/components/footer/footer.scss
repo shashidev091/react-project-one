@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&display=swap');
+
+.footer-container {
+  .row {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: black;
+  }
+
+  li {
+    list-style: none;
+    color: var(--light);
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    line-height: 2rem;
+    text-decoration: underline;
+
+    svg {
+      vertical-align: text-top;
+    }
+  }
+}

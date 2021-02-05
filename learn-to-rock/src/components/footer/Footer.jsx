@@ -1,38 +1,34 @@
 import React from "react";
 import {Col, Row} from "react-bootstrap";
+import './footer.scss'
+import {SiFacebook, SiGithub, SiHackerrank, SiInstagram, SiLinkedin, SiPhotocrowd, SiTwitter} from 'react-icons/si';
+import {CgProfile, FcGallery, ImOffice} from "react-icons/all";
 
 const Footer = () => {
     return(
-        <div>
+        <div className="footer-container">
             <Row>
                 <Col lg={10}>
                     <Row>
-                        <Col lg={3}>
+                        <Col lg={4} className="footer-data">
                             <ul>
-                                <li>facebook</li>
-                                <li>twitter</li>
-                                <li>instagram</li>
+                                <li> <SiFacebook/> facebook</li>
+                                <li> <SiTwitter/> twitter</li>
+                                <li> <SiInstagram/> instagram</li>
                             </ul>
                         </Col>
-                        <Col lg={3}>
+                        <Col lg={4} className="footer-data">
                             <ul>
-                                <li>Github</li>
-                                <li>LinkedIn</li>
-                                <li>HackersRank</li>
+                                <li> <SiGithub/> Github</li>
+                                <li> <SiLinkedin/> LinkedIn</li>
+                                <li> <SiHackerrank/> HackersRank</li>
                             </ul>
                         </Col>
-                        <Col lg={3}>
+                        <Col lg={4} className="footer-data">
                             <ul>
-                                <li>Gallery</li>
-                                <li>Resume</li>
-                                <li>Company</li>
-                            </ul>
-                        </Col>
-                        <Col lg={3}>
-                            <ul>
-                                <li>Gallery</li>
-                                <li>Resume</li>
-                                <li>Company</li>
+                                <li> <SiPhotocrowd/> Gallery</li>
+                                <li> <CgProfile /> Resume</li>
+                                <li> <ImOffice/> Company</li>
                             </ul>
                         </Col>
                     </Row>
